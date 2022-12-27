@@ -1,0 +1,210 @@
+:root{
+    --white: #FFFBEB;
+    --light-blue: #495579;
+    --dark-blue: #263159;
+    --darker-blue: #251749;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white);
+}
+
+.container{
+    width: 1200px;
+}
+
+header{
+    background-color: var(--dark-blue);
+    padding: 2rem 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+footer{
+    
+    background-color: var(--darker-blue);
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer a{
+    color: var(--white);
+}
+
+.main{
+    background-color: var(--white);
+    flex-grow: 1;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-div{
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: 2px solid transparent;
+    font-size: 1.5em;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#add:hover{
+    background-color: var(--white);
+    color: var(--darker-blue);
+    border: 2px solid var(--dark-blue);
+}
+
+.book-grid{
+    margin: 1rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+}
+
+.book{
+    background-color: var(--light-blue);
+    height: 300px;
+    border-radius:15px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.book>button{
+    width: 90%;
+    height: 3rem;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+
+#delete{
+    background-color: rgb(253, 109, 109);
+    color: black;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#delete:hover{
+    background-color: rgb(218, 94, 94);
+}
+
+
+.unread{
+    background-color: rgb(223, 230, 108);
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.unread:hover{
+    background-color: rgb(194, 199, 93);
+}
+
+.read{
+    background-color: lightgreen;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.read:hover{
+    background-color: rgb(125, 204, 125);
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.445);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay>div{
+    background-color: var(--white);
+    width: 30vw;
+    height: 50vh;
+    border-radius: 15px;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.overlay>div>input{
+    background-color: transparent;
+    width: 80%;
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid black ;
+    padding: 0 5%;
+    font-size: 1.5em;
+    
+}
+
+.overlay>div>input[type=submit]{
+    background-color: rgb(89, 225, 89);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.overlay>div>input[type=submit]:hover{
+    background-color: rgb(86, 210, 86);
+}
+
+.read-section{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.read-section>input{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.hidden{
+    display: none;
+}

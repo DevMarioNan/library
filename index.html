@@ -5,14 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Library</title>
 </head>
 
 <body>
 
+    <div class="overlay hidden">
+        <div>
+            <input type="text" id="book_name" placeholder="Book Name">
+            <input type="text" id="book_author" placeholder="Book Author">
+            <input type="number" id="book_pages" placeholder="Book Pages">
+            <div class="read-section">
+                <label for="book_read">read?</label>
+                <input type="checkbox" id="book_read">
+            </div>
+            <input type="submit" id="book_add" value="Add">
+        </div>
+    </div>
 
+    <header>
+        <div class="container">
+            <h1>Library</h1>
+        </div>
+    </header>
 
+    <div class="main">
+        <div class="container main-div">
+            <button id="add">Add Book</button>
+            <div class="book-grid">
+
+                <div class="book">
+                    <h2 id="title">"harry potter"</h2>
+                    <h3 id="author">- jk rolling</h3>
+                    <p id="pages"> 100 Pages</p>
+                    <button id="read" class="unread ">unread</button>
+                    <button id="delete">delete</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2022 <a href="https://github.com/DevMarioNan">Mario Nan</a> </p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
