@@ -145,6 +145,8 @@ footer a{
     background-color: rgb(125, 204, 125);
 }
 
+
+
 .overlay{
     background-color: rgba(0, 0, 0, 0.445);
     position: fixed;
@@ -169,6 +171,7 @@ footer a{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    
 }
 
 .overlay>div>input{

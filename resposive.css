@@ -1,0 +1,11 @@
+@media screen and (max-width:1500px){
+    .overlay>div{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .overlay>div{
+        width: 300px;
+    }
+}
